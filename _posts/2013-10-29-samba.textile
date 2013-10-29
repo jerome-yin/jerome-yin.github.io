@@ -1,0 +1,49 @@
+---
+layout: post
+title: Samba的配置
+---
+
+h1. 如何让Linux识别Netbios
+
+这就可以安装samba来完成
+
+h1. Samba服务器安装与配置
+{% highlight ruby %}
+yum install samba
+mkdir /opt/linuxsir
+chmod 777 /opt/linuxsir -R
+find -name smb.conf -print
+cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
+vi /etc/samba/smb.conf
+{% endhighlight %}
+
+h1. smb.conf的编辑
+
+{% highlight ruby %}
+vi /etc/samba/smb.conf
+{% endhighlight %}
+
+[global]
+workgroup = WORKGROUP		#windows的工作组
+security = share
+guest ok = yes
+server string = Samba Server
+netbios name = weibo
+
+[share]
+path = /opt/linuxsir
+browseable = yes
+writeable = yes
+
+h1. 重启samba服务
+
+{% highlight ruby %}
+/etc/init.d/samba restart
+service smbd start
+service nmbd start
+{% endhighlight %}
+
+h1. 进入windows测试
+
+运行\\192.168.80.208 #Linux主机的IP地址
+ping linux主机名

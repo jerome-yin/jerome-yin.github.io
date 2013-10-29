@@ -1,0 +1,23 @@
+---
+layout: post
+title: github的ssh配置
+---
+
+h1. 创建RSA KEY
+{% highlight ruby %}
+ssh-keygen -t rsa
+{% endhighlight %}
+
+h1. 检查SSH KEYS
+
+@cd ~/.ssh@
+@ls		#Lists the files in your .ssh directory@
+
+h1. Add your SSH key to GitHub
+
+# Go to your Account Settings 
+# Click "SSH Keys" in the left sidebar 
+# Click "Add SSH key" 
+# Paste your key into the "Key" field .
+# Click "Add key" 
+# Confirm the action by entering your GitHub password
