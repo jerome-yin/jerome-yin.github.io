@@ -6,15 +6,15 @@ Follow me:
   </a>
   {% endif %}
 
-  {% if site.theme.social.hacker_news %}
-  <a title="{{ site.theme.social.hacker_news }} on Hacker News" href="http://news.ycombinator.com/user?id={{site.theme.social.hacker_news }}">
-    <i class="icon-sign-blank"></i>
+  {% if site.theme.social.queclink_it_support %}
+  <a title="{{ site.theme.social.queclink_it_support }} on Queclink IT Support" href="http://jerome-yin/redmine">
+    <i class="icon-wrench"></i>
     <span class="icon-overlay icon-hn">Y</span>
   </a>
   {% endif %}
 
-  {% if site.theme.social.twitter %}
-  <a title="{{ site.theme.social.twitter }} on Twitter" href="http://twitter.com/{{ site.theme.social.twitter }}">
+  {% if site.theme.social.weibo %}
+  <a title="{{ site.theme.social.weibo }} on Weibo" href="http://weibo.com/u/2118770522/home?wvr=5{{ site.theme.social.weibo }}">
     <i class="icon-twitter-sign"></i>
   </a>
   {% endif %}
@@ -22,4 +22,11 @@ Follow me:
   <a title="RSS feed" id="rss" href="/atom.xml">
     <i class="icon-rss-sign"></i>
   </a>
+
+ {% if site.theme.social.mail %}
+  <a title="Mail to {{ site.theme.social.mail }}" href="mailto:jerome.yin@queclink.com" title="">
+    <i class="icon-envelope-alt"></i>
+  </a>
+  {% endif %} 
+
 </div>

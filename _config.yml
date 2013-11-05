@@ -11,13 +11,14 @@ theme:
 
   # Profile links on the left sidebar, leave blank to ignore
   social:
-    github: swanson
-    twitter: _swanson
-    hacker_news: swanson
+    github: jerome-yin
+    weibo: 光阴悠悠
+    queclink_it_support: Jerome Yin
+    mail: Jerome Yin
 
   # "Hi, I'm _______"
-  name: Matt Swanson
-  email: test@example.com
+  name: 殷优
+  email: jerome.yin@queclink.com
   tagline: "weak opinions, strongly held"
 
   # Google Analytics key, leave blank to ignore

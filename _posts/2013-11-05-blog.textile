@@ -1,0 +1,9 @@
+---
+layout: post
+title: 我的Blog终于告一段落
+---
+
+h1. Blog的建立
+
+我在Github上的Blog套用别人的格式，终于弄得差不多了
+以后有什么在修改一下吧
