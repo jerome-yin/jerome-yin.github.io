@@ -54,3 +54,10 @@ h1. 删除samba
 yum remove samba
 yum remove samba-common
 {% endhighlight %}
+
+h1. 无法上传
+
+{% highlight ruby %}
+setsebool -P samba_export_all_rw on
+{% endhighlight %}
+
